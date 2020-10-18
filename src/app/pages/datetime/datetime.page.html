@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color = "secondary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Date Time</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Data padrão</ion-label>
+    <ion-datetime></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Data formato num</ion-label>
+    <ion-datetime display-format="DD/MM/YYYY"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Data formato customizado</ion-label>
+    <ion-datetime display-format="MM/YYYY" picker-format="MMMM YYYY"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Data formato MAX MIN</ion-label>
+    <ion-datetime display-format="MM/YYYY" min="2016" max="2021"></ion-datetime>
+  </ion-item>
+
+
+</ion-content>

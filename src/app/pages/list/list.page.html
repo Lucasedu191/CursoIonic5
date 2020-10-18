@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar color = "secondary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Lista Form</h3>
+  <ion-list>
+    <ion-item>
+      <ion-label>Input</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Checkbox</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Radio</ion-label>
+      <ion-radio slot="start"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>togle</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+  </ion-list>
+  <h3>Lista com Avatar</h3>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://www.google.com/search?q=avatar+imagem&sxsrf=ALeKk019G66zapEgLEzPwCWYpGwr7uHcOw:1602940681353&tbm=isch&source=iu&ictx=1&fir=gA1eYsf1Oe8hdM%252C3eho75kBPsUTwM%252C_&vet=1&usg=AI4_-kREH1G7iSHStL02-_g_4ahEy6bRhA&sa=X&ved=2ahUKEwiVwqGv27vsAhVXIbkGHTCuBOkQ9QF6BAgKEDM#imgrc=gA1eYsf1Oe8hdM">
+      </ion-avatar>
+      <ion-label>
+        <h2>lucas Silva</h2>
+        <h3>Desenvolvedor</h3>
+        <p>co-fundador do site bondGrana http://ilovecode.com.br</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Opção na direita</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option>Não lido</ion-item-option>
+        <ion-item-option color="danger">Excluir</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item>
+      <ion-label>Sem opção</ion-label>
+    </ion-item>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Opção na esquerda</ion-label>
+      </ion-item>
+      <ion-item-options side="start">
+        <ion-item-option>Não lido</ion-item-option>
+        <ion-item-option color="danger">Excluir</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <h3>Lista com array</h3>
+    <ion-list>
+      <ion-item>
+        <ion-label>Toggle</ion-label>
+        <ion-toggle slot="end"></ion-toggle>
+      </ion-item>
+      <ion-item *ngFor="let fruta of frutas">
+        <ion-label>{{fruta}}</ion-label>
+      </ion-item>
+    </ion-list>
+  
+
+  
+  </ion-list>
+
+</ion-content>

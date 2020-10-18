@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar color = "secondary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>CheckBox</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Default Check Box-->
+  <ion-checkbox></ion-checkbox>
+
+  <!-- Disable Check Box-->
+  <ion-checkbox disabled = "true"></ion-checkbox>
+
+  <!--Checked Checkbox-->
+  <ion-checkbox checked="true"></ion-checkbox>
+
+  <!-- Checkbox Colors-->
+  <ion-checkbox color="primary"></ion-checkbox>
+  <ion-checkbox color="secondary"></ion-checkbox>
+  <ion-checkbox color="danger"></ion-checkbox>
+  <ion-checkbox color="light"></ion-checkbox>
+  <ion-checkbox color="dark"></ion-checkbox>
+
+
+  <ion-item>
+    <ion-label>Padrão</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Desabilitado</ion-label>
+    <ion-checkbox disabled= "true"></ion-checkbox>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Checado</ion-label>
+    <ion-checkbox checked = "true"></ion-checkbox>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Desabilitado + checado</ion-label>
+    <ion-checkbox disabled= "true" checked="true"></ion-checkbox>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Inicio de frase</ion-label>
+    <ion-checkbox slot= "start"></ion-checkbox>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>cor Primaria</ion-label>
+    <ion-checkbox color= "primary"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>cor secundaria</ion-label>
+    <ion-checkbox color= "secondary"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Vermelho</ion-label>
+    <ion-checkbox color= "danger"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>cor Branca</ion-label>
+    <ion-checkbox color= "ligth"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>cor preto</ion-label>
+    <ion-checkbox color= "dark"></ion-checkbox>
+  </ion-item>
+
+  <h3>Meses</h3>
+  <ion-list>
+    <ion-item *ngFor="let mes of meses">
+      <ion-label>{{mes.nomeDoMes}}</ion-label>
+      <ion-checkbox checked="{{mes.marcado}}"[(ngModel)]="mes.marcado" color="danger"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" (click)="exibirMeses()">Exibir meses marcados</ion-button>
+
+</ion-content>
