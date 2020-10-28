@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color = "secondary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Toggle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Default Toggle -->
+<ion-toggle></ion-toggle>
+<br>
+<!-- Disabled Toggle -->
+<ion-toggle disabled></ion-toggle>
+<br>
+<!-- Checked Toggle -->
+<ion-toggle checked></ion-toggle>
+<br>
+<!-- Toggle Colors -->
+<ion-toggle color="success"></ion-toggle>
+<br>
+<ion-toggle color="secondary"></ion-toggle>
+<br>
+<ion-toggle color="danger"></ion-toggle>
+<br>
+<ion-toggle color="warning"></ion-toggle>
+<br>
+<ion-toggle color="dark"></ion-toggle>
+<br>
+
+<!-- Toggles in a List -->
+<ion-list>
+  <ion-item>
+    <ion-label>Pepperoni</ion-label>
+    <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sausage</ion-label>
+    <ion-toggle [(ngModel)]="sausage" disabled="true"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mushrooms</ion-label>
+    <ion-toggle [(ngModel)]="mushrooms"></ion-toggle>
+  </ion-item>
+</ion-list>
+
+</ion-content>

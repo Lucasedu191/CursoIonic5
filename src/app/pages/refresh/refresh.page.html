@@ -10,7 +10,13 @@
 
 <ion-content>
   <ion-refresher slot="fixed" (ionRefresh)="atualizar($event)">
-    <ion-refresher-content></ion-refresher-content>
+    <ion-refresher-content
+    pullingicon="arrow-dropdown"
+    pullingText="Puxe para atualizar"
+    refreshingSpinner="circles"
+    refreshingText="Atualizando...">
+
+    </ion-refresher-content>
   </ion-refresher>
 
   <ion-item>

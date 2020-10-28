@@ -13,91 +13,20 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Navegação',
-      url: 'navegacao',
-      icon: 'paper-plane'
-    },
-    {
-      title: 'Botões',
-      url: 'botao',
+      title: 'ComponentesVisuais',
+      url: 'componentes-visuais',
       icon: 'construct'
     },
     {
-      title: 'Alert',
-      url: 'alert',
+      title: 'Componentes Nativos',
+      url: 'componentes-nativos',
       icon: 'construct'
     },
     {
-      title: 'Action Sheet',
-      url: 'actionsheet',
-      icon: 'construct'
-    },
-    {
-      title: 'Badge',
-      url: 'badge',
-      icon: 'construct'
-    },
-    {
-      title: 'Card',
-      url: 'card',
-      icon: 'construct'
-    },
-    {
-      title: 'Checkbox',
-      url: 'checkbox',
-      icon: 'construct'
-    },
-    {
-      title: 'Chip',
-      url: 'chip',
-      icon: 'construct'
-    },
-    {
-      title: 'Content',
-      url: 'content',
-      icon: 'construct'
-    },
-    {
-      title: 'DateTime',
-      url: 'datetime',
-      icon: 'construct'
-    },
-    {
-      title: 'Fab',
-      url: 'fab',
-      icon: 'construct'
-    },
-    {
-      title: 'Grid',
-      url: 'grid',
-      icon: 'construct'
-    },
-    {
-      title: 'Infinitescroll',
-      url: 'infinitescroll',
-      icon: 'construct'
-    },
-    {
-      title: 'Input',
-      url: 'input',
-      icon: 'construct'
-    },
-    {
-      title: 'List',
-      url: 'list',
-      icon: 'construct'
-    },
-    {
-      title: 'ProgressBar',
-      url: 'progressbar',
-      icon: 'construct'
-    },
-    {
-      title: 'Refresh',
-      url: 'refresh',
+      title: 'Api Externa',
+      url: 'api',
       icon: 'construct'
     }
-
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 

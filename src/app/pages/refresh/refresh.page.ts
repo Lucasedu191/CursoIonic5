@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RefreshPage implements OnInit {
 
-  
   constructor() { }
 
   ngOnInit() {
@@ -16,6 +15,7 @@ export class RefreshPage implements OnInit {
     console.log('usuario solicitou a atualização');
     setTimeout(() => {
       console.log('lista atualizada com sucesso!');
+      event.target.complete();
     }, 2000);
   }
 }
